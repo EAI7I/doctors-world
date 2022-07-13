@@ -1,0 +1,23 @@
+@mixin sliderCard ($top, $right, $left, $bottom, $width)
+  width: 100px
+  height: 100px
+  position: relative
+  display: flex
+  flex-direction: column
+  transform-origin: 50% 45px
+  .card_description
+    width: $width
+    position: absolute
+    top: $top
+    right: $right
+    left: $left
+    bottom: $bottom
+  .card_img
+    width: 110px
+    height: 110px
+    box-sizing: border-box
+    border-radius: 50%
+  .card_rating
+    position: relative
+    bottom: 140px
+    right: 45px
